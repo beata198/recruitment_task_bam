@@ -9,6 +9,12 @@
   font-style: normal;
 }
 
+:root {
+  --swiper-scrollbar-border-radius: 0;
+  --swiper-scrollbar-bg-color: rgb(145, 142, 142);
+  --swiper-scrollbar-size: 1px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -78,6 +84,13 @@ body {
   &::after {
     font-size: 1em;
   }
+}
+
+.advertisement {
+  display: none;
+  position: absolute;
+  z-index: 999999;
+  background-color: #000;
 }
 
 @media (min-width: 481px) {
