@@ -35,6 +35,43 @@ body {
   overflow: hidden;
 }
 
+#logo {
+  width: fit-content;
+  padding: 1rem;
+  position: relative;
+  z-index: 999;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+#overlay {
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  min-height: fit-content;
+  background-color: #000;
+  position: absolute;
+  z-index: 100;
+  opacity: 1;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1em;
+}
+
 .swiper {
   width: 100%;
   height: fit-content;
@@ -106,6 +143,9 @@ body {
     &::after {
       font-size: 1.75em;
     }
+  }
+  main {
+    padding: 2rem;
   }
 }
 
