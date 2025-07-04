@@ -33,15 +33,15 @@ window.addEventListener("DOMContentLoaded", async () => {
   initCtaButton();
   initSwiper();
 
-  const isLandscape = window.matchMedia("(orientation: landscape)").matches;
-  const widthScreen = window.innerWidth;
-  const isMobile = widthScreen >= 480 && widthScreen <= 1024;
+  // const isLandscape = window.matchMedia("(orientation: landscape)").matches;
+  // const widthScreen = window.innerWidth;
+  // const isMobile = widthScreen >= 480 && widthScreen <= 1024;
 
-  if (!(isLandscape && isMobile)) {
-    introTimeline = animationForSceneIntro();
-  } else {
-    introTimeline = animationForSceneIntro(true);
-  }
+  // if (!(isLandscape && isMobile)) {
+  //   // introTimeline = animationForSceneIntro();
+  // } else {
+  //   introTimeline = animationForSceneIntro(true);
+  // }
 });
 
 const checkDeviceOrientation = () => {
