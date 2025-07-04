@@ -1,12 +1,17 @@
 import { gsap } from "gsap";
+import eventTracking from "./eventTracking";
 
 export function animationForSceneIntro(pause = false) {
   const introLoading = document.getElementById("logo");
   const overlay = document.getElementById("overlay");
-
   const tl = gsap.timeline({ paused: pause });
 
   introLoading.style.display = "block";
+
+  // EVENT TRACKING - scene 1 becomes visible
+  tl.call(() => {
+    eventTracking("scene_change", "intro");
+  });
 
   tl.fromTo(
     introLoading,
@@ -43,6 +48,11 @@ export function animationForSceneIntro(pause = false) {
     },
     "<"
   );
+
+  // EVENT TRACKING - scene 2 becomes visible
+  tl.call(() => {
+    eventTracking("scene_change", "gallery");
+  });
 
   return tl;
 }

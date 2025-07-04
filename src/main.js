@@ -1,8 +1,29 @@
 import "./scss/main.scss";
+import eventTracking from "./components/eventTracking";
 import { initCtaButton } from "./components/ctaButtton";
 import { initSwiper } from "./components/galleryProducts";
 import { createSlides } from "./components/generateSlide";
 import { animationForSceneIntro } from "./components/animationForSceneIntro";
+
+//EVENT TRACKING - when the page has loaded
+window.addEventListener("load", () => {
+  eventTracking("ad_load");
+});
+
+//EVENT TRACKING - every time the browser window is resized
+window.addEventListener("resize", () => {
+  eventTracking("window_resize");
+});
+
+//EVENT TRACKING - when the user leaves the page (e.g., switches tabs) / and change the title
+document.addEventListener("visibilitychange", () => {
+  if (document.hidden) {
+    eventTracking("page_hide");
+    document.title = "😥 Come back....";
+  } else {
+    document.title = "Recruitment task | Junior Frontend Developer";
+  }
+});
 
 let introTimeline = null;
 
