@@ -1,4 +1,5 @@
 import "./scss/main.scss";
+import { initCtaButton } from "./components/ctaButtton";
 import { initSwiper } from "./components/galleryProducts";
 import { createSlides } from "./components/generateSlide";
 import { animationForSceneIntro } from "./components/animationForSceneIntro";
@@ -8,6 +9,7 @@ let introTimeline = null;
 window.addEventListener("DOMContentLoaded", async () => {
   await createSlides("/data/products.json");
 
+  initCtaButton();
   initSwiper();
 
   const isLandscape = window.matchMedia("(orientation: landscape)").matches;
