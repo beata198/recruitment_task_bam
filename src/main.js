@@ -1,9 +1,9 @@
 import "./scss/main.scss";
-import eventTracking from "./components/eventTracking";
+import eventTracking from "./modules/eventTracking";
 import { initCtaButton } from "./components/ctaButtton";
 import { initSwiper } from "./components/galleryProducts";
-import { createSlides } from "./components/generateSlide";
-import { animationForSceneIntro } from "./components/animationForSceneIntro";
+import { createSlides } from "./modules/generateSlide";
+import { animationForSceneIntro } from "./modules/animationForSceneIntro";
 
 //EVENT TRACKING - when the page has loaded
 window.addEventListener("load", () => {

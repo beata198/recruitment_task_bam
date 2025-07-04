@@ -1,5 +1,5 @@
 import { gsap } from "gsap";
-import eventTracking from "./eventTracking";
+import eventTracking from "../modules/eventTracking";
 
 export function initCtaButton(btnID = "learnMoreBtn") {
   const btn = document.getElementById(btnID);
