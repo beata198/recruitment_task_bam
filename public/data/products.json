@@ -1,0 +1,26 @@
+[
+  {
+    "id": "shoe1",
+    "name": "shoe1",
+    "alt": "Shoe 1",
+    "src": "assets/images/products/shoe1.png"
+  },
+  {
+    "id": "shoe2",
+    "name": "shoe2",
+    "alt": "Shoe 2",
+    "src": "assets/images/products/shoe2.png"
+  },
+  {
+    "id": "shoe3",
+    "name": "shoe3",
+    "alt": "Shoe 3",
+    "src": "assets/images/products/shoe3.png"
+  },
+  {
+    "id": "shoe4",
+    "name": "shoe4",
+    "alt": "Shoe 4",
+    "src": "assets/images/products/shoe4.png"
+  }
+]

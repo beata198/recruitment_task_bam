@@ -1,0 +1,16 @@
+@use "swiper/scss";
+@use "swiper/scss/navigation";
+@use "swiper/scss/pagination";
+
+@font-face {
+  font-family: "Jumper";
+  src: url("/fonts/JumperPERSONALUSEONLY-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
