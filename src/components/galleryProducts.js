@@ -2,7 +2,7 @@ import Swiper from "swiper";
 import { Navigation, Pagination } from "swiper/modules";
 import { displayVideo } from "./displayVideo";
 
-export function initSwiperWithAnimation() {
+export function initSwiper() {
   const swiper = new Swiper(".swiper", {
     modules: [Navigation, Pagination],
     slidesPerView: 2,
