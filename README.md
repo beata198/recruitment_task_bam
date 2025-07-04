@@ -29,7 +29,7 @@ The goal was to build a simple, interactive advertising unit presented as a mobi
 
 ## 🚀 Demo
 
-[View Live]() – Netlify
+[View Live](https://recruitment-beata-junior-dev-bam.netlify.app/) – Netlify
 
 ## Stack Technologies
 
@@ -66,7 +66,7 @@ Clone repo:
 
 ```
 git clone https://github.com/beata198/recruitment_task_bam.git
-cd project-name
+cd recruitment_task_bam
 ```
 
 To run the project locally in development mode:
